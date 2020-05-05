@@ -21,8 +21,8 @@ func main() {
 
 func index(w http.ResponseWriter, r *http.Request) {
 	products := []Product{
-		{Nome: "Camiseta", Descricao: "camiseta do verão", Preco: 123.0, Quantidade: 100},
-		{Nome: "Notebook", Descricao: "acer bolado", Preco: 1000.01, Quantidade: 10},
+		{Nome: "Camiseta", Descricao: "camiseta do verão", Preco: 123.01, Quantidade: 150},
+		{Nome: "Notebook", Descricao: "acer bolado", Preco: 1000.01, Quantidade: 190},
 		{Nome: "Tenis Nike SB", Descricao: "Nike bom pra sk8", Preco: 250.05, Quantidade: 50},
 	}
 	templates.ExecuteTemplate(w, "Index", products)
